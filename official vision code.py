@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 #image resizing and blurring
-img = cv2.imread("bananar.jpg")
+img = cv2.imread("apple.png")
 resize_img = cv2.resize(img, (640,480))
 blur_image = cv2.fastNlMeansDenoisingColored(resize_img,None,20,10,7,21)
 
