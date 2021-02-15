@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 
 #image resizing and blurring
-img = cv2.imread("appleb.jpg")
+img = cv2.imread(input("Image"))
 original_resize = cv2.resize(img, (640,480))
 resize = cv2.resize(img, (640,480))
 
