@@ -32,7 +32,7 @@ for c in cnts:
     x,y,w,h = cv2.boundingRect(c)
     aspect_ratio = float(w)/h
     area = float(w*h)
-    if .9 <= aspect_ratio <= 1.8 and area>1000:
+    if .7 <= aspect_ratio <= 1.8 and area>1000:
         cv2.rectangle(original_resize, (x, y), (x + w, y + h), (36,255,12), 2)
     
 
